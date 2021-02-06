@@ -36,10 +36,10 @@ class Test(Resource):
     def get(self):
         parser = reqparse.RequestParser()
         args = parser.parse_args()
-        return 'ahahhahaha'
+        return 'hello world'
 
 
 ns.add_resource(Test, "/test")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
