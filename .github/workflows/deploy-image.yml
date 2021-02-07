@@ -27,5 +27,5 @@ jobs:
       - name: Build docker image
         run: |
           docker build -t circlek-gas-price-image .
-          docker push docker.pkg.github.com/codermango/circlek-gas-price/circlek-gas-price:0.04
+          docker push docker.pkg.github.com/codermango/circlek-gas-price/circlek-gas-price:latest
 
