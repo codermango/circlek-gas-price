@@ -1,10 +1,9 @@
 from flask import Flask
 from flask_restx import Resource, Api, reqparse
-from circlek_crawler import CirclekCrawler
+from circlek_crawler.circlek_crawler import CirclekCrawler
 
 app = Flask(__name__)
-api = Api(app, version='1.0', title="CircleK Gas API")
-
+api = Api(app, version='1.0', title="CircleK Gas API", doc="/swagger")
 ns = api.namespace("circlek")
 
 circlek_gas = CirclekCrawler("https://www.circlek.se/drivmedelspriser")

@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./src/app.py" ]
+EXPOSE 80
+
+CMD [ "gunicorn", "-w", "2", "app:app" ]
