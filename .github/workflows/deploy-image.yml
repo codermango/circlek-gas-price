@@ -26,6 +26,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build docker image
         run: |
-          docker build -t docker.pkg.github.com/codermango/circlek-gas-price/circlek-gas-price-image:0.04 .
+          docker build -t docker.pkg.github.com/codermango/circlek-gas-price/circlek-gas-price-image:0.0.4 .
           docker push docker.pkg.github.com/codermango/circlek-gas-price/circlek-gas-price-image:0.0.4
 
